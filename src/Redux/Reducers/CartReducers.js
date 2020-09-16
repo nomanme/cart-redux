@@ -1,14 +1,14 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from '../Action/CartAction';
+import { ADD_TO_CART, REMOVE_FROM_CART } from "../Action/CartAction";
 
 const initialState = {
     cart: [],
-    // products: [
-    //     { name: 'Lenovo Laptop', id: 1 },
-    //     { name: 'Afsus Laptop', id: 2 },
-    //     { name: 'Dell Laptop', id: 3 },
-    //     { name: 'HP Laptop', id: 4 },
-    //     { name: 'Toshiba Laptop', id: 5 }
-    // ]
+    products: [
+        { name: 'Lenovo Laptop', id: 1 },
+        { name: 'Afsus Laptop', id: 2 },
+        { name: 'Dell Laptop', id: 3 },
+        { name: 'HP Laptop', id: 4 },
+        { name: 'Toshiba Laptop', id: 5 }
+    ]
 }
 
 const CartReducers = (state = initialState, action) => {
@@ -29,7 +29,7 @@ const CartReducers = (state = initialState, action) => {
 
         default:
             return state;
-    };
+    }
 }
 
 export default CartReducers;
