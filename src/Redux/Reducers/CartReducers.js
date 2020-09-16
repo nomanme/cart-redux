@@ -1,4 +1,3 @@
-import React from 'react';
 import { ADD_TO_CART, REMOVE_FROM_CART } from '../Action/CartAction';
 
 const initialState = {
